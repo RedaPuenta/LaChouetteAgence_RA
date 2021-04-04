@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.title-gen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+.separa-choice{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.separa-choice .choice:nth-child(1) a{
+    width: 502px;
+}
+
+.choice p{
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.choice:hover{
+    transform: scale(1.1);
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.two-choice{
+    animation-name: rile;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rile{
+    0%{
+        transform: translateX(80px);
+    }
+
+    100%{
+        transform: translateX(-80px);
+    }
+}
+
+.you-choice{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.diviseur-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rapport-gen{
+    text-align: center;
+}
+
+header, footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+}
+
+header{
+    justify-content: center;
+}
+
+footer{
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+header a:first-of-type{
+    margin-left: 10px;
+}
+
+header .ext:last-of-type{
+    margin-right: 10px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+li:hover a{
+    color: rgb(174, 0, 255);
+}
+
+a:hover{
+    color: rgb(174, 0, 255);
+}
+
+a{
+    transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.rapport-gen img, .rapport-gen h2, .ptt{
+    border: 1px solid black;
+    box-shadow: gray 0px 0px 8px;
+}
+
+.rapport-gen h2, .ptt, .rapport-gen img{
+    margin-top: 10px;
+    padding: 2px 10px 2px 10px;
+    width: 610px;
+}
+
+.ptt{
+    padding: 10px;
+}
+
+.return{
+    position: absolute;
+    left: 10px;
+}
+
+.return p{
+    margin-left: 5px;
+}
+
+.vert{
+    color: rgb(0, 209, 0);
+}
+
+.orange{
+    color: orange;
+}
+
+.rapport-gen ul{
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+
+.rapport-gen .no{
+    list-style-type: "\274C";
+    padding-left: 5px;
+}
+
+.rapport-gen .yes{
+    list-style-type: "\2705";
+    padding-left: 5px;
+}
+
+.blue{
+    color: rgb(174, 0, 255);
+    font-style: normal;
+}
+
+.note{
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
